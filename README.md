@@ -1,6 +1,6 @@
 # Van Gogh Style Transfer
 This project fine-tunes a Stable Diffusion model on paintings by Van Gogh and provides a style transfer implementation to turn images into Van Gogh style paintings.
-
+![Try Out](https://replicate.com/antonvice/vg_style)
 # Usage
 To train the model:
 
