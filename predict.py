@@ -20,11 +20,9 @@ class Predictor(BasePredictor):
         print("Loading pipeline...")
 
         model_id = "stabilityai/stable-diffusion-2-1"
-        MODEL_CACHE = "diffusers-cache"
         self.pipe = StableDiffusionPipeline.from_pretrained(
             model_id,
             torch_dtype=torch.float16,
-            cache_dir=MODEL_CACHE,
             local_files_only=True,
             safety_checker=None,
         ).to("cuda")
